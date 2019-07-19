@@ -1,0 +1,22 @@
+.banner {  width: 750rpx;  height: 417rpx;}.banner image {  width: 750rpx;  height: 417rpx;}
+#card{
+  width:80vw;
+  height:12vw;
+  line-height: 12vw;
+  background-color: #bf9959;
+  color:white;
+  border-radius: 3vw;
+  margin-left: 10vw;
+  margin-top: 10vw;
+  clear:both;
+}
+#member{
+  width:50vw;
+  height:12vw;
+  line-height: 12vw;
+  background-color: #bf9959;
+  color:white;
+  border-radius: 3vw;
+  margin-left: 25vw;
+  margin-top: 10vw;
+}

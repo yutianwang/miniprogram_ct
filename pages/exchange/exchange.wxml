@@ -1,0 +1,62 @@
+<view>
+  <view style='background-color:white;padding-left:4vw;font-size:4vw'>您可兑换的礼品是:</view>
+      <image src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2872660671,344892991&fm=26&gp=0.jpg' style='width:100vw;'></image>
+</view>
+<view class="add-address">
+<view>
+<view style='background-color:white;padding-left:4vw;padding-top:3vw'>
+  会员信息
+</view>
+<view class="add-form">
+    <view class="form-item">
+      <input class="input" bindinput="bindinputMemberName" placeholder="姓名" maxlength='10'/>
+    </view>
+    <view class="form-item" style='position:relative'>
+      <input style='float:left;' class="input" bindinput="bindinputMemberMobile" maxlength="11" type="number" placeholder="手机号码" />
+      <button class='getCode'>获取验证码</button>
+    </view>
+
+    <view class="form-item">
+      <input class="input" bindinput="bindinputCode" maxlength="4" type="number" placeholder="验证码" />
+    </view>
+  </view>
+</view>
+
+<view>
+<view style='background-color:white;padding-left:4vw;padding-top:3vw'>
+ 收货人信息
+</view>
+<view class="add-form">
+    <view class="form-item">
+      <input class="input" bindinput="bindinputName" placeholder="姓名"/>
+    </view>
+    <view class="form-item" >
+      <input   class="input" bindinput="bindinputMobile" maxlength="11" type="number" placeholder="手机号码" />
+      
+    </view>
+    
+    <view class="form-item">
+      <picker mode="multiSelector" value="{{multiIndex}}" bindchange="bindchange" bindcolumnchange="bindPickerChange" range="{{province}}" range-key="{{'name'}}">
+        <view wx:if="{{ area_show == '请选择省份,城市,区域'}}">
+          <view class="input area"> {{area_show}}</view>
+        </view>
+        <view wx:if="{{ area_show != '请选择省份,城市,区域'}}">
+          <view class="input  ming"> {{area_show}}</view>
+        </view>
+      </picker>
+    </view>
+    <view class="form-item">
+      <input class="input" bindinput="bindinputAddress"  placeholder="详细地址, 如街道、楼盘号等" />
+    </view>
+
+    <view class="form-item">
+      <input class="input" bindinput="bindinputMemo"  placeholder="如有备注，请输入" />
+    </view>
+  </view>
+</view>
+  
+  <view style='width:100vw;background-color:white;margin-top:4vw'>
+    <button class="cannel" bindtap="cancelAddress" style='float:left;margin-left:4vw'>取消</button>
+    <button class="save" bindtap="saveAddress" style='float:right;margin-right:4vw'>兑换</button>
+  </view>
+</view>

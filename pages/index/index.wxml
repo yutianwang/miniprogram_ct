@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view>
+  <swiper class="banner" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+    <swiper-item  wx:key="2">
+      <block>
+        <view>
+          <button style="padding-left:1rpx;" data-id="1"  bindgetuserinfo="bindGetUserInfo">
+            <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1561992183764&di=04407b361791f9a21341b785328f73b6&imgtype=0&src=http%3A%2F%2Fimg007.hc360.cn%2Fk3%2FM04%2FAF%2FDB%2FwKhQx1q7U0uEKN8dAAAAAFQD9pI419.jpg" background-size="cover"></image>
+          </button>
+        </view>
+      </block>
+    </swiper-item>
+
+    <swiper-item  wx:key="2">
+      <block>
+        <view>
+          <button style="padding-left:1rpx;" data-id="1"  bindgetuserinfo="bindGetUserInfo">
+            <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2419683647,3095850926&fm=27&gp=0.jpg" background-size="cover"></image>
+          </button>
+        </view>
+      </block>
+    </swiper-item>
+
+    <swiper-item  wx:key="2">
+      <block>
+        <view>
+          <button style="padding-left:1rpx;" data-id="1"  bindgetuserinfo="bindGetUserInfo">
+            <image src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3488306725,3480751164&fm=26&gp=0.jpg" background-size="cover"></image>
+          </button>
+        </view>
+      </block>
+    </swiper-item>
+  </swiper>
+</view>
+
+
+<view style='width:100vw;text-align:center;clear:both'>
+    <input placeholder='请输入卡券编号' bindinput="bindinputNumber"  maxlength="10" type="number" style='text-align:left;margin-top:25vw;margin-left:10vw;margin-right:10vw;font-size:4vw;'></input>
+    <view style='width:80vw;margin-left:10vw;height:0.3vw;background-color:#ccc;margin-top:5vw;'></view>
+     <input placeholder='请输入卡券密码' bindinput="bindinputSecret" maxlength="6" type="number" style='text-align:left;margin-top:5vw;margin-left:10vw;margin-right:10vw;font-size:4vw;'></input>
+    <view id='card' bindtap='exchange'>兑换</view> 
+</view>

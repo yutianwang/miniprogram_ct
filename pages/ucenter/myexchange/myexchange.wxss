@@ -1,0 +1,43 @@
+.container{
+  background-color: white;
+}
+.order_box{
+  width:100vw;
+  height:30vw;
+background-color: white;
+  position: relative;
+
+}
+.order_image{
+   width:30vw;
+   float:left;
+   height:26vw;
+   margin-top: 2vw;
+   margin-left: 2vw;
+}
+.product_name{
+   float:left;
+   margin-top: 2vw;
+   margin-left: 2vw;
+}
+.order_number{
+   float:left;
+   margin-top: 4vw;
+   margin-left: 2vw;
+}
+.seedetail{
+  
+  float:right;
+width:20vw;
+height:8vw;
+font-size:3.6vw;
+line-height:8vw;
+background-color:#bf9959;
+color:white;
+border:none;
+border-radius:10rpx;
+text-align:center;
+margin-right:2vw;
+margin-top:12vw;
+
+}

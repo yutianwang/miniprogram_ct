@@ -1,0 +1,38 @@
+<view class="container">
+  <button class="userinfo" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+    <view class="header_img">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <text class="userinfo-nickname"></text>
+  </button>
+  <view style="height:20rpx;background: #eee;width:100%;"></view>
+  <view class="my-item" style='background:none;display:flex;flex-direction:column;height:auto;'></view>
+  <view class="user-menu">
+    <view class="item">
+      <button class="a" bindtap='gomyexchange'>
+        <text class="icon order"></text>
+        <text class="txt">我的兑换</text>
+      </button>
+    </view>
+    <view class="item">
+      <button class="a" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+        <text class="icon coupon"></text>
+        <text class="txt">我的卡券</text>
+      </button>
+    </view>
+
+   <button class='service' open-type="contact">
+      <view class="item no-border">
+        <button url="url" class="a">
+          <text class="icon kefu"></text>
+          <text class="txt">联系客服</text>
+        </button>
+        
+      </view>
+    </button>
+  </view>
+
+  <view>
+    <image src='http://n.sinaimg.cn/translate/20150926/2_Mm-fxieynx5668851.JPG' style='width:100vw;margin-top:10vw;height:50vw;position:absolute;bottom:1vw' ></image>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<view class="container">
+  <view class='order_box'>
+    <image class='order_image' src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2872660671,344892991&fm=26&gp=0.jpg'></image>
+    <text class='order_number'>兑换编号：1234567891</text>
+    <text class='product_name'>大杂蟹10只。。。</text>
+    <text class='seedetail' bindtap='seedetail'>查看详情</text>
+  </view>
+  <view style='width:100vw;height:0.3vw;background-color:#ccc;margin-top:2vw;'></view>
+  <view class='order_box'>
+    <image class='order_image' src='https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2872660671,344892991&fm=26&gp=0.jpg'></image>
+    <text class='order_number'>兑换编号：1234567892</text>
+    <text class='product_name'>大杂蟹10只。。。</text>
+    <text class='seedetail' bindtap='seedetail'>查看详情</text>
+  </view>
+  <view style='width:100vw;height:0.3vw;background-color:#ccc;margin-top:2vw;'></view>
+</view>
